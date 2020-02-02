@@ -56,8 +56,4 @@ VOLUME /tests
 
 
 # Expose web server port
-EXPOSE 8112
-
-# Expose our data, logs and configuration volumes
-# ["/data", "/usr/local/var/log/couchdb", "/usr/local/etc/couchdb"]
-# VOLUME /data
+EXPOSE 8080
