@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 username=$1
 imageName=$2
 ## Build the image
@@ -13,7 +12,8 @@ docker run -t -d  $username/$imageName
 # shows all containers including ones that are not running.
 docker ps -a
 containerId=$3
+
 # open container in terminal 
-# $ docker exec -it 6e91b600e57c /bin/bash
+# $ docker exec -it 9a35484b208b /bin/bash
 
 
