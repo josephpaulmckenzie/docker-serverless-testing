@@ -11,15 +11,17 @@ docker run -t -d  $username/$imageName
 
 # shows all containers including ones that are not running.
 docker ps -a
-# containerId=$3
 
  read -p 'ContainerId: ' containerId
 
 
 # open container in terminal 
-docker exec -it bcf06bd96aa4  /bin/bash
+docker exec -it $containerId  /bin/bash
 
 
 # docker tag ubuntu-serverless-tests josephpaulmckenzie/ubuntu-serverless-tests:latest
 
 
+aws configure set aws_access_key_id AKIAI44QH8DHBEXAMPLE
+aws configure set  aws_secret_access_key nYe0f76UN5FQ/nJH3jVDh2MTMhCd33aCY6RcgPKU
+aws configure set region us-east-1
