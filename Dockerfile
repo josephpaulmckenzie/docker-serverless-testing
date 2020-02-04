@@ -18,7 +18,7 @@ RUN apt-get update && apt-get -y install locales && \
     software-properties-common \
     wget\
     nano\
-    jq\
+    jq -y \
     sudo -y
 
 RUN root/scripts/set_time_zone.sh
