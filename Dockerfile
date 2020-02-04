@@ -23,6 +23,7 @@ RUN apt-get update && apt-get -y install locales && \
 
 RUN root/scripts/set_time_zone.sh
 
+
 # Install Node.js v12.x
 RUN apt-get install -y\
     g++ \
